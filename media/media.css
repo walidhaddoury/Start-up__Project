@@ -1,3 +1,58 @@
+/* Navbar */
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.position_navbar {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.position_navbar form {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.position_navbar form input {
+    border: none;
+}
+
+.position_navbar form button {
+    border: none;
+    background-color: transparent;
+}
+
+.link_navbar {
+    border: none;
+    background-color: transparent;
+
+    font-size: large;
+    color: black;
+    text-decoration: none;
+
+    width: 15%;
+    text-align: center;
+
+    /*border-bottom: 1px solid black;*/
+}
+
+.link_navbar:hover {
+    border-bottom: 2px solid maroon;
+}
+
+.link_navbarr { 
+    width: 80%;
+     max-width: 1000px;
+ } 
+
+
+
+/* Style carrousel */
 * {box-sizing:border-box}
 
 /* Box Diapo */
@@ -7,6 +62,7 @@
 
   position: relative;
   margin: auto;
+  padding-top: 15px;
 }
 
 /* Cacher les images par defaut */
@@ -77,4 +133,39 @@
 .img{
   width:958px;
   height: 328px;
+}
+/*fin style carrousel*/
+
+.container-footer {
+    display : flex;
+    justify-content: space-between;
+}
+
+.container {
+    height: 30vh;
+    width: 28vh;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background:white;
+    box-shadow:  4px 4px 8px #a9a9a9,
+             -4px -4px 8px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
