@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <title>Argonaute</title>
 </head>
+
 <body>
     <header>
-        <img src="assets/Logo Argo grand.png" alt="">        
+        <img src="assets/Logo Argo grand.png" alt="">
+        <div class="icon-container">
+            <a class="icon" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="icon" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a>
+        </div>
     </header>
     <div class="navbar">
         <div class="position_navbar">
@@ -17,71 +26,80 @@
             <button class="link_navbar" href="#">News Letter</button>
             <button class="link_navbar" href="#">A propos</button>
             <form action="">
-                <input type="text" placeholder="Search..">
+                <input type="text" placeholder="Recherche..">
                 <button><i class="fas fa-search"></i></button>
             </form>
         </div>
     </div>
 
 
-       <!-- Diapo container -->
-<div class="slideshow-container">
+    <!-- Diapo container -->
+    <div class="slideshow-container">
 
-    <!-- Cadre des photos -->
-    <div class="mySlides fade">
-      <img class="img" src="" style="width:100%">
+        <!-- Cadre des photos -->
+        <div class="mySlides fade">
+            <img class="img" src="/home/assets/fairy-tale-1077863_1280.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img" src="assets/golden-791072_1920.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img" src="/home/assets/storytelling-4203628_1920.jpg" style="width:100%">
+        </div>
+
+        <!-- bouton de navigation entre les photos-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  
-    <div class="mySlides fade">
-      <img class="img" src="assets/golden-791072_1920.jpg" style="width:100%">
+    <br>
+
+    <!-- buton en forme de cercle  -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-  
-    <div class="mySlides fade">
-      <img class="img" src="/home/assets/storytelling-4203628_1920.jpg" style="width:100%">
-    </div>
-  
-    <!-- bouton de navigation entre les photos-->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- buton en forme de cercle  -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
 
     <main>
         A PROPOS
     </main>
 
-    
-<footer>
-
-<div class="container-footer">
-
-    <div class="container">
-        <p>INFORMATIONS
-        </p>
+    <div class="nl">
+        <img class=imgnl src="/home/assets/undraw_Letter_re_8m03.svg">
+        <form action="">
+            <input type="text" placeholder="Entrez votre mail">
+            <button><i class="far fa-paper-plane fa-2x"></i></button>
+        </form>
     </div>
-    <div class="container">
-        <p>NOTRE ACTUALITÉ</p>
-        <div class="icon-container">
-        <div class="icon"><i class="fab fa-facebook-f"></i></div>
-        <div class="icon"><i class="fab fa-instagram"></i></div>
-        <div class="icon"><i class="fab fa-twitter"></i></div>
+
+
+    <footer>
+
+        <div class="container-footer">
+
+            <div class="container">
+                <p>INFORMATIONS
+                </p>
+            </div>
+            <div class="container">
+                <p>NOTRE ACTUALITÉ</p>
+                <div class="icon-container">
+                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <div class="icon"><i class="fab fa-twitter"></i></div>
+                </div>
+            </div>
+            <div class="container">
+                <p>BLABLABLA</p>
+            </div>
+
+
         </div>
-    </div>
-    <div class="container">
-        <p>BLABLABLA</p>
-    </div>
 
-
-</div>
-
-</footer>
-<script type="text/javascript" src="accueil.js"></script>
+    </footer>
+    <script type="text/javascript" src="accueil.js"></script>
 </body>
+
 </html>
