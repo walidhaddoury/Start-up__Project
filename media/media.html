@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="media.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Les Argonautes_Médias</title>
 </head>
 <body>
-    
+
+
+
+    <!-- Diapo container -->
+<div class="slideshow-container">
+
+    <!-- Cadre des photos -->
+    <div class="mySlides fade">
+      <img class="img" src="img/1_mk1-6aYaf_Bes1E3Imhc0A.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="img" src="img/meilleure-banque-image.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="img" src="img/pool.jpg" style="width:100%">
+    </div>
+  
+    <!-- bouton de navigation entre les photos-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- buton en forme de cercle  -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Navigation entres les photos 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+//Controle des images 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
 </body>
 </html>
