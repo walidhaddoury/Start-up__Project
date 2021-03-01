@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Argonautes_Médias</title>
 </head>
 <body>
+    <header>
+        <img src="../home/assets/Logo Argo grand.png" alt="">        
+    </header>
+    <div class="navbar">
+        <div class="position_navbar">
+            <button class="link_navbar" href="#">Accueil</button>
+            <button class="link_navbar" href="#">News Letter</button>
+            <button class="link_navbar" href="#">A propos</button>
+            <form action="">
+                <input type="text" placeholder="Search..">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
 
 
-
+<!-- debut Carrousel-->
     <!-- Diapo container -->
 <div class="slideshow-container">
 
@@ -38,6 +53,34 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+  <!--Fin carrousel-->
+
+
+  <footer>
+
+    <div class="container-footer">
+    
+        <div class="container">
+            <p>INFORMATIONS
+            </p>
+        </div>
+        <div class="container">
+            <p>NOTRE ACTUALITÉ</p>
+            <div class="icon-container">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <p>BLABLABLA</p>
+        </div>
+    
+    
+    </div>
+    
+    </footer>
+
 
   <script>
       var slideIndex = 1;
@@ -68,6 +111,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
   </script>
 </body>
 </html>
