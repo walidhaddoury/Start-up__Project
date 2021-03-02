@@ -6,6 +6,10 @@ html, body {
     background-color: white;
 }
 
+button:focus {
+    outline: none;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -48,7 +52,7 @@ header .icon-container .icon {
 /* css navbar */
 
 .navbar {
-    height: 60px;
+    height: 7%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -57,7 +61,7 @@ header .icon-container .icon {
 
 .position_navbar {
     height: 100%;
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -67,11 +71,15 @@ header .icon-container .icon {
     border-bottom: 1px solid black;
 }
 
+.position_navbar form input:focus {
+    outline: none;
+}
+
 .position_navbar form input {
     border: none;
 }
 
-.position_navbar form button {
+.position_navbar form a {
     border: none;
     background-color: transparent;
 }
@@ -304,6 +312,7 @@ header .icon-container .icon {
   font-size: 18px;
   color: #555;
   padding:20px 10px 20px 5px;
+  width: 250px;
 }
 .mail {
   /* margin-bottom: 30px; */
@@ -358,7 +367,7 @@ footer {
 
 .container-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: auto;
 }
 
@@ -386,4 +395,9 @@ h1,p{
 .mailbut {
   display: flex;
   flex-direction: row;
+}
+
+.plane {
+    border: none;
+    background-color: transparent;
 }
