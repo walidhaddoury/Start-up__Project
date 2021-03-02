@@ -27,9 +27,7 @@ header .icon-container .icon {
     color: black;
 }
 
-header .icon-container .icon:hover {
-    /* transition */
-}
+
 
 .icon {
     height: 50px;
