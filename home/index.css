@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -35,15 +37,15 @@ header .icon-container .icon:hover {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background:white;
-    box-shadow:  4px 4px 8px #a9a9a9,
-             -4px -4px 8px #ffffff;
+    background: white;
+    box-shadow: 4px 4px 8px #a9a9a9, -4px -4px 8px #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* css navbar */
+
 .navbar {
     height: 60px;
     width: 100%;
@@ -76,14 +78,11 @@ header .icon-container .icon:hover {
 .link_navbar {
     border: none;
     background-color: transparent;
-
     font-size: large;
     color: black;
     text-decoration: none;
-
     width: 15%;
     text-align: center;
-
     /*border-bottom: 1px solid black;*/
 }
 
@@ -91,129 +90,138 @@ header .icon-container .icon:hover {
     border-bottom: 2px solid maroon;
 }
 
-.link_navbarr { 
+.link_navbarr {
     width: 80%;
-     max-width: 1000px;
- } 
-
-
- * {box-sizing:border-box}
-
-/* Box Diapo */
-.slideshow-container {
-  max-width:958px;
-  height: 328px;
-
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
 }
 
+/* Box Diapo */
+
+.slideshow-container {
+    max-width: 958px;
+    height: 328px;
+    position: relative;
+    margin: auto;
+}
+
+
 /* Cacher les images par defaut */
+
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position des boutons de navigations entre les photsos  */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /* indicateur cercle */
+
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin-bottom: 100px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 3s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /*  animation de flou  */
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-.img{
-  width:958px;
-  height: 328px;
-  border-radius: 10px;
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
- 
+.img {
+    width: 958px;
+    height: 328px;
+    border-radius: 10px;
+}
+
 /* .slider figure {
-    position: relative; 
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-  }
-
-.slider figure img {
-       width: 20%;
-        height: auto; 
-        float: 
-        left;
-     }
-.slider { 
-    width: 80%;
-     max-width: 1000px;
-      overflow: hidden
-     }
-
-@keyframes slidy {
-        0% { left: 0%; }
-        20% { left: 0%; }
-        25% { left: -100%; }
-        45% { left: -100%; }
-        50% { left: -200%; }
-        70% { left: -200%; }
-        75% { left: -300%; }
-        95% { left: -300%; }
-        100% { left: -400%; }
-      } */
+      position: relative; 
+      width: 500%;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-align: left;
+    }
+  .slider figure img {
+         width: 20%;
+          height: auto; 
+          float: 
+          left;
+       }
+  .slider { 
+      width: 80%;
+       max-width: 1000px;
+        overflow: hidden
+       }
+  @keyframes slidy {
+          0% { left: 0%; }
+          20% { left: 0%; }
+          25% { left: -100%; }
+          45% { left: -100%; }
+          50% { left: -200%; }
+          70% { left: -200%; }
+          75% { left: -300%; }
+          95% { left: -300%; }
+          100% { left: -400%; }
+        } */
 
 /* CSS NEWLETTER */
+
 .nl {
     width: 100%;
     height: 50px;
@@ -222,8 +230,12 @@ header .icon-container .icon:hover {
 }
 
 /* .imgnl {
-  height:40%;
-} */
+    height:40%;
+  } */
+
+.imgnl {
+    height: 40¨;
+}
 
 .nl form input {
     border: none;
@@ -234,16 +246,16 @@ header .icon-container .icon:hover {
 .nl form button {
     border: none;
     background-color: transparent;
-} 
-
+}
 
 /* CSS FOOTER */
+
 footer {
     border-top: 3px solid maroon;
 }
 
 .container-footer {
-    display : flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -254,9 +266,8 @@ footer {
 
 .icon-container {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
-
 }
 
 p {
