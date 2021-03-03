@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Didot, serif;
 }
 
 html, body {
@@ -73,11 +74,6 @@ li {
     padding: 10px;
     font-size: large;
     text-decoration: none;
-    font-family: 'Cardo', serif;
-}
-
-ul {
-    font-family: 'Cardo', serif;
 }
 
 .menu {
@@ -91,8 +87,8 @@ ul {
 .sous_menu {
     width: 100%;
     background-color: white;
-    border-left: 1px solid maroon;
-    border-right: 1px solid maroon;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
 }
 
 .sous_menu:hover {
@@ -155,7 +151,7 @@ nav ul li:hover ul li {
 .position_navbar form button {
     border: none;
     background-color: transparent;
-}
+} 
 
 .link_navbar {
     text-decoration: none;
@@ -556,8 +552,26 @@ nav ul li:hover ul li {
 /* CSS FOOTER */
 
 footer {
+    position: relative;
     border-top: 1px solid black;
     color: white;
+    font-weight: bolder;
+    background-image: url(assets/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+}
+
+footer:after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3535359c;
+
+    z-index: 6;
 }
 
 .container-footer {
@@ -565,17 +579,17 @@ footer {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: 50px;
-    padding-top: 40px;
+    padding: 30px;
     text-align: center;
-    background-image: url(assets/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+
+    position: relative;
+    z-index: 10;
 }
 
 .place1 {
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .place2 {
@@ -600,7 +614,7 @@ footer {
 }
 
 .icon-container {
-    margin-top: 30px;
+    margin-top: 70px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -609,8 +623,8 @@ footer {
 
 .rond {
     background-color: white;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     text-decoration: none;
     color: black;
@@ -620,14 +634,14 @@ footer {
     align-items: center;
 }
 
-h1 {
+h3 {
     font-family: 'Cardo', serif;
     font-size: medium;
 }
 
-h1, p {
+h3, p {
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 20px;
 }
 
 .mailbut {
@@ -635,6 +649,7 @@ h1, p {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .plane {
