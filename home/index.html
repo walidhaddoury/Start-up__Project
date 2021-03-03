@@ -24,42 +24,42 @@
         </div>
     </header>
     <div class="navbar">
-        <!-- <ul id="menu-deroulant" class="position_navbar">
-            <li class="link_navbar"><a href="#">Archives des lectures essentielles</a>
-                <ul>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                    <li><a href="#">lien sous menu 1</a></li>
-                </ul>
-            </li>
-            <li class="link_navbar"><a href="#">Les Argonautes</a>
-                <ul>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                </ul>
-            </li>
-            <li class="link_navbar"><a href="#">Rencontres et échange</a>
-                <ul>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                    <li><a href="#">Lien sous menu 2</a></li>
-                </ul>
-            </li>
-        </ul> -->
-
-        <div class="position_navbar">
-            <button class="link_navbar" href="../media/media.html">Archives des lectures essentielles</button>
-            <button class="link_navbar" href="#">Les Argonautes</button>
-            <button class="link_navbar" href="#">Rencontres et échange</button>
+        <nav class="position_navbar">
+            <ul class="menu">
+                <li class="categorie_menu"><a href="../media/media.html">Archives des lectures essentielles</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">La Carte - canevas de lectures essentielles</a></li>
+                        <li class="sous_menu"><a href="#">L’Europe Centrale et Orientale</a></li>
+                        <li class="sous_menu"><a href="#">Au Sud-Est</a></li>
+                        <li class="sous_menu"><a href="#">Au Sud et Sud-Ouest</a></li>
+                        <li class="sous_menu"><a href="#">Au Nord</a></li>
+                    </ul>
+                </li>
+                <li class="categorie_menu"><a href="#">Les Argonautes</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">Nos coups du coeur du moment</a></li>
+                        <li class="sous_menu"><a href="#">Nos publications</a></li>
+                        <li class="sous_menu"><a href="#">Nos publications à venir</a></li>
+                        <li class="sous_menu"><a href="#">Ici vous pouvez vous associer!</a></li>
+                        <li class="sous_menu"><a href="#">Ici vous pouvez acheter des livres!</a></li>
+                        <li class="sous_menu"><a href="#">Boutique Les Argonautes</a></li>
+                    </ul>
+                </li>
+                <li class="categorie_menu"><a href="#">Rencontres et échange</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">Agenda des indispensables</a></li>
+                        <li class="sous_menu"><a href="#">Evénements</a></li>
+                        <li class="sous_menu"><a href="#">Contactez-nous</a></li>
+                        <li class="sous_menu"><a href="#">Restez informés (Newsletter)</a></li>
+                        <li class="sous_menu"><a href="#">A propos</a></li>
+                    </ul>
+                </li>
+            </ul>
             <form action="">
                 <input type="text" placeholder="Recherche..">
                 <button><i class="fas fa-search"></i></button>
             </form>
-        </div>
+        </nav>
     </div>
 
     <div class="slideshow-container">
@@ -111,8 +111,8 @@
 
 
     <section class="stage">
-    <figure class="ball"><span class="shadow"></span></figure>
-  </section>
+        <figure class="ball"><span class="shadow"></span></figure>
+    </section>
 
 
   <section class="news">
@@ -171,31 +171,45 @@
 
         <div class="container-footer">
 
-            <div class="container">
-                <h1>À PROPOS
-                    </br>CONTACT</br>LIBRAIRES</br>PARTENAIRES</br>AFFILIATIONS</br>CODE ÉTHIQUE</br></h1>
-            </div>
-            <div class="container">
-                <h1> LÉGALES</br>ÉTHIQUE ENVIRONNEMENTALE</br>DROITS/LICENCES/FOREIGN RIGHTS</br>
-                    <h1>
-            </div>
-
-            <div class="container">
-                <h1>NOTRE ACTUALITÉ</h1>
-                <div class="icon-container">
-                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
-                    <div class="icon"><i class="fab fa-instagram"></i></div>
-                    <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="container place1">
+                <div>
+                    <h3>Newsletter</h3>
+                    <div class="mailbut">
+                        <div class="mail">
+                            <input type="username" class="user-input" placeholder="Entrez votre email.." />
+                        </div>
+                        <button class="plane">
+                            <i class="far fa-paper-plane fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Notre actualité</h3>
+                    <div class="icon-container">
+                        <a class="rond" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a class="rond" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a class="rond" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <h1>NEWSLETTER</h1>
-                <div class="mailbut">
-                    <div class="mail">
-                        <input type="username" class="user-input" placeholder="Entrez votre email.." /></div>
-                    <button class="plane">
-                        <i class="far fa-paper-plane fa-2x"></i>
-                    </button>
+
+            <div class="container place2">
+                <h3>Informations</h3>
+                <div class="display">
+                    <ul>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Libraires</a></li>
+                        <li><a href="#">Droits/Licenses/Foreign rights</a></li>
+                        <li><a href="#">Partenaires</a></li>
+
+                    </ul>
+                    <ul>
+                        <li><a href="#">Affiliations</a></li>
+                        <li><a href="#">Code éthique</a></li>
+                        <li><a href="#">Ethique environnementale</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
                 </div>
             </div>
 
