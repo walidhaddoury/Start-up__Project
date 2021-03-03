@@ -1,10 +1,12 @@
 *{box-sizing: border-box;}
 
-html, body {
+/* html, body {
     margin: 0;
     height: 100%;
     background-color: white;
-}
+   
+  } */
+  
 
 button:focus {
     outline: none;
@@ -203,6 +205,7 @@ header .icon-container .icon {
 }
 
 
+
 /* main {
    height: 90%;
    border: black;
@@ -226,13 +229,87 @@ header .icon-container .icon {
   position: absolute;
   left: 65%;
   top: 135%;
-  font-size: 5vh;
+  font-size: 3vh;
   margin-left: -3px;
   overflow: scroll;
   scroll-behavior: smooth;
   width: 30%;
   height: 40vh;
   
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+ }
+}
+.btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .btn {
+    margin: 0 1em 2em;
+ }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+
+.btn-2 {
+  letter-spacing: 0;
+}
+.btn-2:hover, .btn-2:active {
+  letter-spacing: 5px;
+}
+.btn-2:after, .btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.btn-2:hover:after, .btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }
 
 
@@ -257,6 +334,7 @@ header .icon-container .icon {
   display: flex;
   flex-direction: row;
 }
+
 
 
 .ball {
@@ -313,7 +391,9 @@ header .icon-container .icon {
   -o-transform: rotateX(90deg) translateZ(-150px);
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
+
 }
+
 /* body {
   width: 300px;
   margin: 20px auto;
@@ -325,7 +405,9 @@ header .icon-container .icon {
   width: 300px;
   height: 300px;
   display: inline-block;
-  margin: 20px;
+  margin: 15%;
+  position: relative;
+  left: 35vh;
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
@@ -420,6 +502,174 @@ header .icon-container .icon {
   flex-direction: row;
   padding: 75px 5px 5px 5px;
 } */
+
+.lastnews {
+  text-align: center;
+  font-size: 8vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container3 {
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.book {
+  width: 225px;
+  height: 350px;
+  position:relative;
+  text-align: center;
+  margin:2.5%;
+}
+
+.book-cover {
+  position: absolute;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  background: #111;
+  background-size:cover;
+  border-radius: 3px;
+  box-shadow: 
+    inset 4px 1px 3px #ffffff60,
+    inset 0 -1px 2px #00000080;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.cover1 {
+  background: url('/Start-up__Project/home/assets/Capture\ d’écran\ 2021-03-02\ à\ 19.28.53.png');
+}
+
+.cover2 {
+  background: url('/Start-up__Project/home/assets/9782072490002_1_75.jpg');
+}
+
+.cover3 {
+  background: url('/Start-up__Project/home/assets/unnamed.jpg');
+}
+
+.book .book-cover {
+  background-size: 100% 100%;
+}
+
+
+.effect {
+  width: 20px;
+  height: 100%;
+  margin-left: 10px;
+  border-left: 2px solid #00000010;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  transition: all .5s ease;
+}
+
+.light {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  border-radius: 3px; 
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
+  top: 0;
+  right:0;
+  opacity: .1;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+}
+
+.book:hover { cursor:pointer; }
+
+.book:hover .book-cover {
+  transform: perspective(2000px) rotateY(-30deg);
+  -webkit-transform: perspective(2000px) rotateY(-30deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 
+    inset 4px 1px 3px #ffffff60,
+    inset 0 -1px 2px #00000080,
+    10px 0px 10px -5px #00000030
+}
+
+.book:hover .effect {
+  width: 40px;
+ /** margin-left:13px;
+  opacity: 0.5; **/
+}
+
+.book:hover .light {
+  opacity: 1;
+  width: 70%;
+}
+
+.book-inside{
+  width: calc(100% - 2px);
+  height:96%;
+  position:relative;
+  top: 2%;
+  border: 1px solid grey;
+  border-radius:3px;
+  background: white;
+  box-shadow: 
+  10px 40px 40px -10px #00000030,
+  inset -2px 0 0 grey,
+  inset -3px 0 0 #dbdbdb,
+  inset -4px 0 0 white,
+  inset -5px 0 0 #dbdbdb,
+  inset -6px 0 0 white,
+  inset -7px 0 0 #dbdbdb,
+  inset -8px 0 0 white,
+  inset -9px 0 0 #dbdbdb;
+}
+
+.title {
+  font-size:22px;
+  width: 100%;
+  color: #333;
+  text-align: center;
+  position: absolute;
+  top:-30px;
+  height: 1px;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.title p {
+  width: 100%;
+  margin:0;
+  line-height:1.3;
+}
+
+
+.btn {
+  position:relative;
+  background: #aaa;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 16px;
+  letter-spacing:1px;
+  border-radius: 50px;
+  bottom: -50px;
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.book:hover .btn, .book:hover .title {
+  opacity: 1;
+}
 
 .container input {
   border: none;
