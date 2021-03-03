@@ -317,10 +317,12 @@ header {
     flex-direction: column;
     justify-content:space-evenly;
     text-align:center;
+    
 
     padding: 1.5%;
     margin-bottom: 1%;
-
 }
-
+.citationPersonne{
+  text-decoration: underline;
+}
     
