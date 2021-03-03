@@ -2,32 +2,72 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="article1.css">
+    <link rel="stylesheet" href="../article1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Argonautes nom article</title>
 </head>
 
 <body>
-    <header class = 'logo'>
-        <img class = 'logoImg' src="../../home/assets/Logo Argo grand.png" alt="">        
+    <header>
+        <a href="../../home/index.html" title="Retour à l'accueil">
+            <img class="iconIMG" src="../../home/assets/Logo Argo grand.png" alt="icon du site">
+        </a>
+        
+        <div class="icon-container">
+            <a class="icon" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="icon" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a>
+        </div>
     </header>
     <div class="navbar">
-        <div class="position_navbar">
-            <button class="link_navbar" href="../home/index.html">Accueil</button>
-            <button class="link_navbar" href="#">News Letter</button>
-            <button class="link_navbar" href="#">A propos</button>
+        <nav class="position_navbar">
+            <ul class="menu">
+                <li class="categorie_menu"><a href="../../home/index.html">Accueil</a>
+                <li class="categorie_menu"><a href="../media/media.html">Archives des lectures essentielles</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">La Carte - canevas de lectures essentielles</a></li>
+                        <li class="sous_menu"><a href="#">L’Europe Centrale et Orientale</a></li>
+                        <li class="sous_menu"><a href="#">Au Sud-Est</a></li>
+                        <li class="sous_menu"><a href="#">Au Sud et Sud-Ouest</a></li>
+                        <li class="sous_menu"><a href="#">Au Nord</a></li>
+                    </ul>
+                </li>
+                <li class="categorie_menu"><a href="#">Les Argonautes</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">Nos coups du coeur du moment</a></li>
+                        <li class="sous_menu"><a href="#">Nos publications</a></li>
+                        <li class="sous_menu"><a href="#">Nos publications à venir</a></li>
+                        <li class="sous_menu"><a href="#">Ici vous pouvez vous associer!</a></li>
+                        <li class="sous_menu"><a href="#">Ici vous pouvez acheter des livres!</a></li>
+                        <li class="sous_menu"><a href="#">Boutique Les Argonautes</a></li>
+                    </ul>
+                </li>
+                <li class="categorie_menu"><a href="#">Rencontres et échange</a>
+                    <ul>
+                        <li class="sous_menu"><a href="#">Agenda des indispensables</a></li>
+                        <li class="sous_menu"><a href="#">Evénements</a></li>
+                        <li class="sous_menu"><a href="#">Contactez-nous</a></li>
+                        <li class="sous_menu"><a href="#">Restez informés (Newsletter)</a></li>
+                        <li class="sous_menu"><a href="#">A propos</a></li>
+                    </ul>
+                </li>
+            </ul>
             <form action="">
-                <input type="text" placeholder="Search..">
+                <input type="text" placeholder="Recherche...">
                 <button><i class="fas fa-search"></i></button>
             </form>
-        </div>
+        </nav>
     </div>
 
     <div class="article">
 
-        <div class="image">
-            <img class="articleImg" src="imageArticle/lePeripleDesArgonautes.png" alt="gif d'un livre et d'arbre">
+        <div class="boximage">
+            <img class="articleImg" src="lePeripleDesArgonautes.png" alt="gif d'un livre et d'arbre">
+            <p class="sourceImg">
+                Le Périple des Argonautes, tableau de Constantin Volanakis.
+            </p>
         </div>
 
         <div class="txt">
@@ -84,24 +124,35 @@
     </div>
 
     
-    <div class="autreArticle">
+    <div class="autreArticle1">
         <h2 class = 'titreAutreArticle'><span> DERNIER ARTICLE </span></h2>
         <div class = autreArticle2>
-            <p>
-                1 article 
-            </p>
-            <p>
-                1 article 
-            </p>
-            <p>
-                1 article 
-            </p>
+            <a class="sousArticle" href="../article0/article0.html" title="1er article">
+                <div>
+                    <img class="sousImg" src="../article0/livrePlante.gif" alt="gif d'un livre et d'arbre">
+                    <p class="soustxt">
+                        1er article 
+                    </p>
+                </div>  
+            </a>
+            <a class="sousArticle" href="../article1/article1.html" title="2eme article">
+                <div>
+                    <img class="sousImg" src="../article1/lePeripleDesArgonautes.png" alt="gif d'un livre et d'arbre">
+                    <p class="soustxt">
+                        2eme article 
+                    </p>
+                </div>
+            </a>
+            <a class="sousArticle" href="../article0/article0.html" title="3eme article">
+                <div>
+                    <img class="sousImg" src="../article0/livrePlante.gif" alt="gif d'un livre et d'arbre">
+                    <p class="soustxt"> 
+                        3eme article 
+                    </p>
+                </div>
+            </a>
         </div>
     </div>
-
-    <span>
-        
-    </span>
 
     <footer>
         <div class="container-footer">
@@ -125,6 +176,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
