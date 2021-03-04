@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Didot, serif;
+    /*font-family: Didot, serif;*/
 }
 
 html, body {
@@ -59,6 +59,7 @@ header .icon-container .icon {
     display: flex;
     justify-content: center;
     margin-bottom: 4%;
+    font-family: 'Cuprum', sans-serif;
 }
 
 .position_navbar {
@@ -167,7 +168,7 @@ nav ul li:hover ul li {
     color: black;
     width: 15%;
     text-align: center;
-    font-family: 'Cardo', serif;
+    font-family: 'Cuprum', sans-serif;
     size: large;
     /*border-bottom: 1px solid black;*/
 }
@@ -312,6 +313,7 @@ nav ul li:hover ul li {
     width: 100%;
     height: auto;
     justify-content: space-evenly;
+    font-family: 'EB Garamond', serif;
 }
 
 .ok {
@@ -343,7 +345,8 @@ nav ul li:hover ul li {
 }
 
 .portfolio-experiment a .text_btn {
-    font-family: proxima-nova, monospace;
+    /*font-family: proxima-nova, monospace;*/
+    font-family: 'EB Garamond', serif;
     transform: translate3d(0, 0.7em, 0);
     /*display: block;*/
     transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -490,6 +493,15 @@ nav ul li:hover ul li {
     font-family: 'Cuprum', sans-serif;
 }
 
+.span2 a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
 .allball {
     width: 40%;
     display: flex;
@@ -497,6 +509,7 @@ nav ul li:hover ul li {
     justify-content: center;
     align-items: center;
 }
+*/
 
 .contain_photo {
     height: auto;
@@ -511,6 +524,7 @@ nav ul li:hover ul li {
 .texte_carte {
     text-decoration: none;
     color: black;
+    font-family: 'EB Garamond', serif;
 }
 
 /* SPHERE  ===========================================*/
@@ -835,6 +849,7 @@ nav ul li:hover ul li {
     text-align: center;
     font-size: 8vh;
     margin-top: 15%;
+    font-family: 'Cuprum', sans-serif;
 }
 
 a {
@@ -1144,8 +1159,56 @@ opacity: 0.5; **/
     width: 200px;
 }
 
-.mail {
+/* .imgnl {
+  height:40%;
+} */
+
+.imgnl {
+    height: 40¨;
+}
+
+/* CSS NEWS LETTER */
+
+.news_letter {
     width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.news_letter h3 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.container_subscribe {
+    background-color: #faf0dc;
+    width: 70%;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mailbut {
+    display: flex;
+    justify-content: center;
+}
+
+.mailbut form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mailbut form input {
+    width: 300px;
     height: 60px;
     /* margin-bottom: 30px; */
     /*border-radius: 25px;*/
@@ -1154,9 +1217,82 @@ opacity: 0.5; **/
     /* box-shadow:  4px 4px 8px #a9a9a9,
            -4px -4px 8px #ffffff; */
     /*box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.6), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);*/
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+.center_line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* CSS BOOK ANIMATION */
+@keyframes book-bounce {
+    0% {
+        transform: translateY(0);
+   }
+    40% {
+        transform: translateY(-10px);
+   }
+    80% {
+        transform: translateY(0);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+@keyframes shelf-lift {
+    0% {
+        transform: translateY(0) rotate(0);
+   }
+    20% {
+        transform: translateY(-4px) rotate(10deg);
+   }
+    40% {
+        transform: translateY(-4px) rotate(0);
+   }
+    40% {
+        transform: translateY(-4px) rotate(-10deg);
+   }
+    80% {
+        transform: translateY(0);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+.book-shelf:hover {
+    cursor: pointer;
+}
+.book-shelf:hover .book-shelf__book {
+    animation: book-bounce 0.4s ease;
+    animation-iteration-count: 1;
+}
+.book-shelf:hover .book-shelf__book--two {
+    animation-delay: 0.04s;
+}
+.book-shelf:hover .book-shelf__book--three {
+    animation-delay: 0.08s;
+}
+.book-shelf:hover .book-shelf__shelf {
+    animation: shelf-lift 0.4s ease;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+
+
+.btn--pitfall {
+    width: auto;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.25rem;
+    border: none;
+    background-color: transparent;
+    color: black;
 }
 
 .far fa-paper-plane fa-2x {
@@ -1168,13 +1304,12 @@ opacity: 0.5; **/
     box-shadow: 4px 4px 8px #a9a9a9, -4px -4px 8px #ffffff;
 }
 
-/* .imgnl {
-  height:40%;
-} */
-
-.imgnl {
-    height: 40¨;
+.plane {
+    border: none;
+    background-color: transparent;
+    color: white;
 }
+
 
 /* CSS FOOTER */
 
@@ -1204,23 +1339,27 @@ footer:after {
     height: 100%;
     width: 100%;
     padding: 30px;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 10;
 }
 
 .place1 {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
+    width: auto;
+    height: auto;
 }
 
 .place2 {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
 }
 
 .container h3 {
     font-size: large;
+    text-align: center;
 }
 
 .container ul li {
@@ -1260,20 +1399,6 @@ h3 {
     font-size: medium;
 }
 
-.mailbut {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.plane {
-    border: none;
-    background-color: transparent;
-    color: white;
-}
-
 .display {
     display: flex;
     flex-direction: row;
@@ -1282,25 +1407,12 @@ h3 {
 /* CSS HL */
 
 .hl {
-    border-top: 1px solid white;
-    width: 100px;
-}
-
-.center_line {
-    justify-content: center;
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
 }
 
 /* CSS BUTTON SUBSCRIBE */
-
-.btn--pitfall {
-    cursor: pointer;
-    padding: 1rem 2rem;
-    font-family: inherit;
-    font-size: 1.25rem;
-    border: none;
-    background-color: transparent;
-    color: white;
-}
 
 /*
 @import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
