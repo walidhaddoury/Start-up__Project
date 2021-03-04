@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Didot, serif;
+  
 }
 
 html, body {
@@ -60,7 +60,8 @@ header .icon-container .icon {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
+    margin-top: 4%;
 }
 
 .position_navbar {
@@ -78,15 +79,15 @@ li {
 }
 
 .menu {
-    width: 70%;
+    width: 100%;
 }
 
 .categorie_menu {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .categorie_menu a {
-    font-size: large;
+  font-size: 30px;
 }
 
 .sous_menu {
@@ -102,6 +103,10 @@ li {
 
 .sous_menu a {
     font-size: medium;
+}
+
+li {
+  font-family: 'EB Garamond', serif;
 }
 
 nav ul {
@@ -143,7 +148,7 @@ nav ul li:hover ul li {
 
 .position_navbar form {
     display: flex;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .position_navbar form input:focus {
@@ -170,7 +175,7 @@ nav ul li:hover ul li {
     color: black;
     width: 15%;
     text-align: center;
-    font-family: 'Cardo', serif;
+    font-family: 'EB Garamond', serif
     size: large;
     /*border-bottom: 1px solid black;*/
 }
@@ -184,30 +189,46 @@ nav ul li:hover ul li {
     max-width: 1000px;
 }
 
+hr {
+  margin: 100px auto;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+.input {
+  margin-top: 3%;
+}
+
+
 
 /* ============================================================================= */
 
 /* Box Diapo */
 
-.slideshow-container {
+
+
+
+/* .slideshow-container {
     max-width: 958px;
     height: 428px;
     position: relative;
     margin: auto;
-}
+} */
 
 
 /* Cacher les images par defaut */
 
-.mySlides {
+/* .mySlides {
     display: none;
     background-color: transparent;
-}
+} */
 
 
 /* Next & previous buttons */
 
-.prev,
+/* .prev,
 .next {
     cursor: pointer;
     position: absolute;
@@ -221,12 +242,12 @@ nav ul li:hover ul li {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-}
+} */
 
 
 /* Position des boutons de navigations entre les photsos  */
 
-.next {
+/* .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -234,12 +255,12 @@ nav ul li:hover ul li {
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 
 /* indicateur cercle */
 
-.dot {
+/* .dot {
     margin-top: 15px;
     cursor: pointer;
     height: 15px;
@@ -254,12 +275,12 @@ nav ul li:hover ul li {
 .active,
 .dot:hover {
     background-color: #717171;
-}
+} */
 
 
 /*  animation de flou  */
 
-.fade {
+/* .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2.5s;
     animation-name: fade;
@@ -288,7 +309,7 @@ nav ul li:hover ul li {
     width: 958px;
     height: 428px;
     border-radius: 10px;
-}
+} */
 
 
 /* main {
@@ -323,16 +344,20 @@ nav ul li:hover ul li {
 }
 
 .span {
-    margin-top: 50px;
+  margin-top: 3%;
     font-size: larger;
     /*margin-left: -3px;*/
     width: 100%;
     height: auto;
+    line-height: 25px;
     justify-content: space-evenly;
+    font-family: 'Cuprum', sans-serif;
+
 }
 
+
 .ok {
-    margin-top: 40px;
+    margin-top: -10px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -361,7 +386,7 @@ nav ul li:hover ul li {
 }
 
 .portfolio-experiment a .text_btn {
-    font-family: proxima-nova, monospace;
+  font-family: 'Cuprum', sans-serif;
     transform: translate3d(0, 0.7em, 0);
     /*display: block;*/
     transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -466,7 +491,7 @@ nav ul li:hover ul li {
 .text {
     background: white;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-weight: 900;
     color: #333;
     font-size: 40px;
@@ -488,12 +513,14 @@ nav ul li:hover ul li {
 
 .span2{
   height: 100%;
-  width: 40%;
-  font-size: 50px ;
+  width: 28%;
+  font-size: 27px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 14%;
+  margin-top: 19%;
+  font-family: 'Cuprum', sans-serif;
+
   
 }
 
@@ -504,7 +531,33 @@ nav ul li:hover ul li {
   
 }
 
-.ball {
+.containerbubble {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+  } 
+  
+    .allball {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+
+  .map {
+    height: 500px;
+    width: 500px;
+    margin-top: 10%;
+  }
+
+
+/* SPHERE  ===========================================*/
+
+
+/* .ball {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -576,16 +629,16 @@ justify-content: space-evenly;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.stage {
+/* .stage {
   width: 300px;
-  height: 300px;
-  /* display: inline-block;
-  margin: 15%; */
-  /* position: relative;
-  left: 10vh; */  
-  -webkit-perspective: 1200px;
+  height: 300px; */
+  /* display: inline-block; = vraiment commenté
+  margin: 15%;  = vraiment commenté*/
+  /* position: relative; = vraiment commenté
+  left: 10vh;   = vraiment commenté */
+  /* -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
   -ms-perspective: 1200px;
   -o-perspective: 1200px;
@@ -811,7 +864,7 @@ justify-content: space-evenly;
   }
 }
 
-
+ */
 
 /* ============================================================================= */
 /* CSS FOOTER */
@@ -820,10 +873,13 @@ justify-content: space-evenly;
   text-align: center;
   font-size: 8vh;
   margin-top: 15%;
+  font-family: 'EB Garamond', serif;
 }
 
 a {
     text-decoration: none;
+    color: black;
+    
 }
 
 .container3 {
@@ -874,11 +930,12 @@ a {
 }
 
 .effect {
+  display: none;
     width: 20px;
     height: 100%;
     margin-left: 10px;
     border-left: 2px solid #00000010;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%); */
     transition: all .5s ease;
 }
 
@@ -887,7 +944,7 @@ a {
     height: 100%;
     position: absolute;
     border-radius: 3px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    /* background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%); */
     top: 0;
     right: 0;
     opacity: .1;
@@ -1119,6 +1176,11 @@ a {
     opacity: 1;
 }
 
+
+
+
+
+
 .container input {
     border: none;
     outline: none;
@@ -1209,6 +1271,7 @@ footer:after {
 .container h3 {
     border-bottom: 1px solid white;
     font-size: large;
+    font-family: 'EB Garamond', serif;
 }
 
 .container ul li {
@@ -1221,6 +1284,7 @@ footer:after {
 .container ul li a {
     text-decoration: none;
     color: white;
+    font-family: 'Cuprum', sans-serif;
 }
 
 .icon-container {
@@ -1245,7 +1309,7 @@ footer:after {
 }
 
 h3 {
-    font-family: 'Cardo', serif;
+  font-family: 'EB Garamond', serif;
     font-size: medium;
 }
 
@@ -1287,7 +1351,7 @@ p {
     cursor: pointer;
     position: relative;
     padding: 1rem 2rem;
-    font-family: inherit;
+    font-family: 'EB Garamond', serif;
     font-size: 1.25rem;
     border: 2px dashed transparent;
     transition: border-color 0s;
