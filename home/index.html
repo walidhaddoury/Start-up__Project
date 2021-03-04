@@ -20,7 +20,7 @@
         <div class="icon-container">
             <a class="icon" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
             <a class="icon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a class="icon" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a>
+            <a class="icon" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </header>
     <div class="navbar">
@@ -38,7 +38,8 @@
                 <li class="categorie_menu"><a href="#">Les Argonautes</a>
                     <ul>
                         <li class="sous_menu"><a href="#">Nos coups du coeur du moment</a></li>
-                        <li class="sous_menu"><a href="../article/articlePresentation/articlePresentation.html">Nos publications</a></li>
+                        <li class="sous_menu"><a href="../article/articlePresentation/articlePresentation.html">Nos
+                                publications</a></li>
                         <li class="sous_menu"><a href="#">Nos publications à venir</a></li>
                         <li class="sous_menu"><a href="#">Ici vous pouvez vous associer!</a></li>
                         <li class="sous_menu"><a href="#">Ici vous pouvez acheter des livres!</a></li>
@@ -57,7 +58,7 @@
             </ul>
             <form action="">
                 <input type="text" placeholder="Recherche..">
-                <button><i class="fas fa-search"></i></button>
+                <button class="search"><i class="fas fa-search"></i></button>
             </form>
         </nav>
     </div>
@@ -82,15 +83,12 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-
-
-
-
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
 
     <main>
 
@@ -112,7 +110,6 @@
                     émotions,
                     géographiquement et culturellement ancrée dans ses origines, accessible à tous, ouverte au monde et
                     pleine de diversité. </br> </br>
-                    <!--<a href='article.html' class="btn btn-2">En savoir plus..</a>-->
                 </div>
                 <div class="ok">
                     <section class="portfolio-experiment">
@@ -131,16 +128,23 @@
     </main>
 
 
-     <div class="containerbubble"><div class="span2"> Les Argonautes proposent une carte interactive qui vous permet de trouver des trésors littéraires par pays, ville et région. 
-    </div>
-            <div class="vl2"></div>
+    <div class="containerbubble">
+        <div class="span2"> Les Argonautes proposent une carte interactive qui vous permet de trouver des trésors
+            littéraires par pays, ville et région.
+        </div>
+        <div class="vl2"></div>
 
-            <div class="allball"><section class="stage">
+        <div class="allball">
+            <section class="stage">
                 <div class='pin'></div>
-            <div class='pulse'></div>
-      
-        <a href="/carte/carte.html"><figure class="ball"><span class="shadow"></span></figure></a></div>
-    </section> </div>
+                <div class='pulse'></div>
+
+                <a href="/carte/carte.html">
+                    <figure class="ball"><span class="shadow"></span></figure>
+                </a>
+        </div>
+        </section>
+    </div>
 
 
     <section class="news">
@@ -188,22 +192,16 @@
         </div>
     </section>
 
-    <!-- <div class="nl">
-        <img class=imgnl src="/home/assets/undraw_Letter_re_8m03.svg">
-        <h2>Inscrivez-vous à la newsletter</h2>
-        <form action="">
-            <input type="text" placeholder="Entrez votre mail">
-            
-        </form>
-    </div> -->
-
     <footer>
 
         <div class="container-footer">
 
             <div class="container place1">
                 <div>
-                    <h3>Newsletter</h3>
+                    <div class="center_line">
+                        <h3>Newsletter</h3>
+                        <div class="hl"></div>
+                    </div>
                     <div class="mailbut">
                         <div class="mail">
                             <input type="username" class="user-input" placeholder="Entrez votre email.." />
@@ -215,13 +213,14 @@
                     <div class="icon-container">
                         <a class="rond" href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f fa-lg"></i></a>
                         <a class="rond" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a class="rond" href="https://twitter.com/?lang=fr"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a class="rond" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="container place2">
                 <h3>Informations</h3>
+                <div class="hl"></div>
                 <div class="display">
                     <ul>
                         <li><a href="#">A propos</a></li>
@@ -243,7 +242,6 @@
         </div>
 
     </footer>
-
     <script type="text/javascript" src="accueil.js"></script>
 </body>
 
