@@ -52,6 +52,8 @@ header .icon-container .icon {
 
 /* Navbar --------------------------------------------------------*/
 
+/* CSS NAVBAR */
+
 .navbar {
     height: auto;
     width: 100%;
@@ -71,13 +73,7 @@ li {
     list-style: none !important;
     color: transparent;
     padding: 10px;
-    font-size: large;
     text-decoration: none;
-    font-family: 'Cardo', serif;
-}
-
-ul {
-    font-family: 'Cardo', serif;
 }
 
 .menu {
@@ -88,15 +84,23 @@ ul {
     border-bottom: 1px solid black;
 }
 
+.categorie_menu a {
+    font-size: large;
+}
+
 .sous_menu {
     width: 100%;
     background-color: white;
-    border-left: 1px solid maroon;
-    border-right: 1px solid maroon;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
 }
 
 .sous_menu:hover {
-    border-bottom: 1px black solid;
+    background-color: #f1f1f1;
+}
+
+.sous_menu a {
+    font-size: medium;
 }
 
 nav ul {
@@ -106,14 +110,13 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    line-height: 44px;
+    line-height: 25px;
     float: left;
 }
 
 nav ul li a {
     color: black;
     padding: 10px;
-    font-size: 20px;
     text-decoration: none;
 }
 
@@ -149,6 +152,7 @@ nav ul li:hover ul li {
     border: none;
     font-size: large;
     width: 300px;
+    background-color: transparent;
 }
 
 .position_navbar form button {
@@ -188,7 +192,7 @@ nav ul li:hover ul li {
 
 .slideshow-container {
     max-width: 75%;
-    height: 328px;
+    height: 40%;
     position: relative;
     margin: auto;
     padding-top: 15px;
@@ -231,10 +235,9 @@ nav ul li:hover ul li {
 /* indicateur cercle */
 
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin-bottom: 100px;
+    cursor: pointer none;
+    height: 5%;
+    width: 5%;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -273,8 +276,8 @@ nav ul li:hover ul li {
 }
 
 .img {
-    width: 958px;
-    height: 328px;
+    width: 50%;
+    height: 50%;
 }
 
 /*fin style carrousel ---------------------------------------------------------*/
@@ -326,6 +329,7 @@ header .icon-container .icon {
     justify-content: center;
     width: 100%;
     height: 5%;
+    margin-bottom: 1.5%;
     font-size: x-large;
 }
 
@@ -333,8 +337,8 @@ header .icon-container .icon {
     height: 400px;
     width: 100%;
     background-color: whitesmoke;
-    border: solid 2px #d2cfcf;
-    border-radius: 82px;
+    border: solid 1px #FF6864;
+    border-radius: 2px;
     box-shadow: -13px 13px 8px whitesmoke, 13px -13px 8px whitesmoke;
     margin-bottom: 50px;
     display: flex;
@@ -348,7 +352,7 @@ header .icon-container .icon {
     height: 349px;
     width: 78%;
     background-color: whitesmoke;
-    border: solid 2px #d2cfcf;
+    border: solid 2.5px #FF6864;
     border-radius: 75px;
     box-shadow: -13px 13px 8px whitesmoke, 13px -13px 8px whitesmoke;
     margin-bottom: 50px;
@@ -434,15 +438,15 @@ header .icon-container .icon {
     bottom: -3px;
     left: calc(0.7em * 1.2);
     right: calc(0.7em * 1.2);
-    height: 3px;
-    background: #d2cfcf;
+    height: 1px;
+    background: #FF6864;
     transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
     transform-origin: left;
 }
 
 .portfolio-experiment .line {
     position: absolute;
-    background: #d2cfcf;
+    background: #FF6864;
     /*#FF6864*/
 }
 
@@ -641,3 +645,8 @@ h1 {
     padding: 20px 10px 20px 5px;
     width: 200px;
 }
+
+
+
+
+

@@ -1,0 +1,15 @@
+@media (min-width: 304px) and (max-width: 767px) {
+  
+    header {
+        width: 676px;
+        height:375px;
+    }
+
+    .navbar{
+        width: 660px;
+        height: 375px;
+    }
+
+  }
+  
+    

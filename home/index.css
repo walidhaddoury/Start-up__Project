@@ -100,6 +100,7 @@ li {
     background-color: white;
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid  #f1f1f1;
 }
 
 .sous_menu:hover {
@@ -224,6 +225,8 @@ nav ul li:hover ul li {
     user-select: none;
 }
 
+/* Position des boutons de navigations entre les photsos  */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -251,9 +254,9 @@ nav ul li:hover ul li {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 5.5s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 5.5s;
 }
 
 @-webkit-keyframes fade {
@@ -1371,7 +1374,6 @@ h4 {
   font-size: medium;
 }
 
-
 /* CSS FOOTER */
 
 footer {
@@ -1476,7 +1478,6 @@ h3 {
 
 /*
 @import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
-
 .btn--pitfall {
     --perspective: 200px;
     --rotation: 65deg;
@@ -1528,7 +1529,7 @@ h3 {
         animation: fall calc(var(--duration) * 2) linear forwards;
         animation-delay: calc(var(--distance-sine) * 0.04s);
     }
-}
+
 
 @keyframes zoom {
     60% {

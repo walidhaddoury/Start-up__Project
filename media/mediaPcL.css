@@ -1,0 +1,647 @@
+@media (min-width: 1200px){
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        margin: 0;
+        height: 100%;
+        background-color: white;
+        font-family: Didot, serif;
+        font-size: large;
+    }
+    
+    button:focus {
+        outline: none;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .icon-container {
+        width: 10%;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    
+    header .icon-container .icon {
+        height: 30px;
+        width: 30px;
+        border: none;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: -12px -12px 12px 0 white, 12px 12px 12px 0 #f2f2f2;
+        /* box-shadow:  4px 4px 8px #a9a9a9,
+                 -4px -4px 8px #ffffff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Navbar --------------------------------------------------------*/
+    
+    .navbar {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+    
+    .position_navbar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    li {
+        list-style: none !important;
+        color: transparent;
+        padding: 10px;
+        font-size: large;
+        text-decoration: none;
+        font-family: 'Cardo', serif;
+    }
+    
+    ul {
+        font-family: 'Cardo', serif;
+    }
+    
+    .menu {
+        width: 70%;
+    }
+    
+    .categorie_menu {
+        border-bottom: 1px solid black;
+    }
+    
+    .sous_menu {
+        width: 100%;
+        background-color: white;
+        border-left: 1px solid maroon;
+        border-right: 1px solid maroon;
+    }
+    
+    .sous_menu:hover {
+        border-bottom: 1px black solid;
+    }
+    
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        list-style: none;
+        line-height: 44px;
+        float: left;
+    }
+    
+    nav ul li a {
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    nav ul li ul {
+        display: none;
+    }
+    
+    /* Rend le menu déroulant caché par défaut */
+    
+    nav ul li:hover ul {
+        /* Affiche la dropNav au survol de la souris avec la class .drop */
+        z-index: 99999;
+        display: list-item !important;
+        position: absolute;
+        margin-top: 5px;
+        margin-left: -10px;
+    }
+    
+    nav ul li:hover ul li {
+        float: none;
+    }
+    
+    .position_navbar form {
+        display: flex;
+        border-bottom: 1px solid black;
+    }
+    
+    .position_navbar form input:focus {
+        outline: none;
+    }
+    
+    .position_navbar form input {
+        border: none;
+        font-size: large;
+        width: 300px;
+    }
+    
+    .position_navbar form button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .link_navbar {
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        font-size: large;
+        color: black;
+        width: 15%;
+        text-align: center;
+        font-family: 'Cardo', serif;
+        size: large;
+        /*border-bottom: 1px solid black;*/
+    }
+    
+    .link_navbar:hover {
+        border-bottom: 1px solid black;
+    }
+    
+    .link_navbarr {
+        width: 80%;
+        max-width: 1000px;
+    }
+    
+    /* Style carrousel --------------------------------------------*/
+    
+    * {
+        box-sizing: border-box
+    }
+    
+    /* Box Diapo */
+    
+    .slideshow-container {
+        max-width: 75%;
+        height: 328px;
+        position: relative;
+        margin: auto;
+        padding-top: 15px;
+    }
+    
+    /* Cacher les images par defaut */
+    
+    .mySlides {
+        display: none;
+    }
+    
+    /* Next & previous buttons */
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    /* Position des boutons de navigations entre les photsos  */
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* indicateur cercle */
+    
+    .dot {
+        cursor: pointer none;
+        height: 15px;
+        width: 15px;
+        margin-bottom: 100px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    
+    /*  animation de flou  */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    .img {
+        width: 958px;
+        height: 328px;
+    }
+    
+    /*fin style carrousel ---------------------------------------------------------*/
+    
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container {
+        height: 30vh;
+        width: 28vh;
+    }
+    
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    p {
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    
+    header .icon-container .icon {
+        height: 30px;
+        width: 30px;
+        border: none;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: -12px -12px 12px 0 white, 12px 12px 12px 0 #f2f2f2;
+        /* box-shadow:  4px 4px 8px #a9a9a9,
+                 -4px -4px 8px #ffffff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .H1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 5%;
+        font-size: x-large;
+    }
+    
+    .articlebis {
+        height: 400px;
+        width: 100%;
+        background-color: whitesmoke;
+        border: solid 2px #d2cfcf;
+        border-radius: 82px;
+        box-shadow: -13px 13px 8px whitesmoke, 13px -13px 8px whitesmoke;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1%;
+    }
+    
+    .article {
+        height: 349px;
+        width: 78%;
+        background-color: whitesmoke;
+        border: solid 1px #FF6864;
+        border-radius: 75px;
+        box-shadow: -13px 13px 8px whitesmoke, 13px -13px 8px whitesmoke;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1%;
+    }
+    
+    .line1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .couv {
+        padding: 5px;
+        width: 140px;
+        height: 212px;
+    }
+    
+    .txt {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 571px;
+        height: 234px;
+        margin-top: 2%;
+    }
+    
+    .cadre {
+        padding: 5px;
+        width: 147px;
+        height: 212px;
+    }
+    
+    .portrait {
+        width: 140px;
+        height: 144px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .portfolio-experiment {
+        background: whitesmoke;
+    }
+    
+    .portfolio-experiment a {
+        color: black;
+        padding: 0.7em calc(0.7em * 1.2);
+        display: inline-block;
+        border: 1px solid transparent;
+        position: relative;
+        font-size: 1.5em;
+        cursor: pointer;
+        letter-spacing: 0.07em;
+    }
+    
+    .portfolio-experiment a .text {
+        font-family: proxima-nova, monospace;
+        transform: translate3d(0, 0.7em, 0);
+        display: block;
+        transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+    }
+    
+    .portfolio-experiment a:after {
+        position: absolute;
+        content: '';
+        bottom: -3px;
+        left: calc(0.7em * 1.2);
+        right: calc(0.7em * 1.2);
+        height: 1px;
+        background: #FF6864;
+        transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+        transform-origin: left;
+    }
+    
+    .portfolio-experiment .line {
+        position: absolute;
+        background: #FF6864;
+        /*#FF6864*/
+    }
+    
+    .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
+        width: 1px;
+        bottom: -3px;
+        top: -3px;
+        transform: scale3d(1, 0, 1);
+    }
+    
+    .portfolio-experiment .line.-top, .portfolio-experiment .line.-bottom {
+        height: 1px;
+        left: -3px;
+        right: -3px;
+        transform: scale3d(0, 1, 1);
+    }
+    
+    .portfolio-experiment .line.-right {
+        right: -3px;
+        transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+        transform-origin: top;
+    }
+    
+    .portfolio-experiment .line.-top {
+        top: -3px;
+        transition: transform 0.08s linear 0.43s;
+        transform-origin: left;
+    }
+    
+    .portfolio-experiment .line.-left {
+        left: -3px;
+        transition: transform 0.08s linear 0.51s;
+        transform-origin: bottom;
+    }
+    
+    .portfolio-experiment .line.-bottom {
+        bottom: -3px;
+        transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+        transform-origin: right;
+    }
+    
+    .portfolio-experiment a:hover .text, .portfolio-experiment a:active .text {
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+    }
+    
+    .portfolio-experiment a:hover:after, .portfolio-experiment a:active:after {
+        transform: scale3d(0, 1, 1);
+        right: -3px;
+        left: -3px;
+        transform-origin: right;
+        transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+    }
+    
+    .portfolio-experiment a:hover .line, .portfolio-experiment a:active .line {
+        transform: scale3d(1, 1, 1);
+    }
+    
+    .portfolio-experiment a:hover .line.-right, .portfolio-experiment a:active .line.-right {
+        transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+        transform-origin: bottom;
+    }
+    
+    .portfolio-experiment a:hover .line.-top, .portfolio-experiment a:active .line.-top {
+        transition: transform 0.08s linear 0.4s;
+        transform-origin: right;
+    }
+    
+    .portfolio-experiment a:hover .line.-left, .portfolio-experiment a:active .line.-left {
+        transition: transform 0.08s linear 0.48s;
+        transform-origin: top;
+    }
+    
+    .portfolio-experiment a:hover .line.-bottom, .portfolio-experiment a:active .line.-bottom {
+        transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+        transform-origin: left;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    /*footer ---------------------------------------------*/
+    
+    footer {
+        border-top: 1px solid black;
+        color: white;
+    }
+    
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        padding-top: 40px;
+        text-align: center;
+        background-image: url(../home/assets/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+    }
+    
+    .place1 {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .place2 {
+        width: 40%;
+    }
+    
+    .container h3 {
+        border-bottom: 1px solid white;
+        font-size: large;
+    }
+    
+    .container ul li {
+        text-align: start;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    
+    .container ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .icon-container {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .rond {
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: 'Cardo', serif;
+        font-size: 35px;
+        margin-bottom: 7%;
+        text-decoration: underline black 2px;
+    }
+    
+    .mailbut {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .plane {
+        border: none;
+        background-color: transparent;
+        color: white;
+    }
+    
+    .display {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .mail {
+        width: 80%;
+        height: 60px;
+        /* margin-bottom: 30px; */
+        /*border-radius: 25px;*/
+        /* box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff; */
+        /* box-shadow:  4px 4px 8px #a9a9a9,
+               -4px -4px 8px #ffffff; */
+        /*box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.6), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);*/
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    
+    .container input {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 18px;
+        color: #555;
+        padding: 20px 10px 20px 5px;
+        width: 200px;
+    }
+
+}
